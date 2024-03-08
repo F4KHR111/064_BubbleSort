@@ -22,7 +22,7 @@ void input() { //procedur untuk input
 
 	for (int i = 0; i < n; i++) { //Looping dengan i dimulai dari 0 hingga n-1
 		cout << "Data ke-" << (i + 1) << " : "; // Output ke layar
-		cin >> a[i];
+		cin >> arr[i];
 	}
 }
 
@@ -30,7 +30,7 @@ void BubbleSortArray() { // procedur untuk mengurutkan array dengan metode bubbl
 	int pass = 1;       //step 1
 	do {
 		for (int j = 0; j <= n - 1 - pass; j++) { //step 2
-			if (a[j] > a[j + 1]) { //step 3
+			if (arr[j] > arr[j + 1]) { //step 3
 				int temp;
 				temp = arr[j];
 				arr[j] = arr[j + 1];
